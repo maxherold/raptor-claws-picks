@@ -55,33 +55,22 @@
         margin: 0;
         padding: 0;
       }
-
-      #container {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  background: pink;
-}
-#animate {
-  width: 125px;
-  height: 250px;
-  position: absolute;
-  background: black;
-}
 </style>
 <body>
 
+
+
+
+    <img
+    src= "raptor-claws.fla"
+    width="240"
+    height="240"
 
     <img
     src="background.png"
     width="420"
     height="420"
-  >
-
-
-  <div id ="container">
-    <div id ="animate"></div>
-  </div> 
+  > 
 
 <h1>Raptor Claws</h1>
 <p>Custom Bass and Guitar Picks.. with a unique curve</p>
@@ -99,20 +88,7 @@
 <p> 
 
 <script>
-      function myMove() {
-        var elem = document.getElementById("animate");
-        var pos = 0;
-        var id = setInterval(frame, 5);
-        function frame() {
-          if (pos == 350) {
-            clearInterval(id);
-          } else {
-            pos++;
-            elem.style.top = pos + 'px';
-            elem.style.left = pos + 'px';
-          }
-        }
-      }
+  
     </script>
 </body>
 </html>
