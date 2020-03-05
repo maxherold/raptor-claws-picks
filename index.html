@@ -62,9 +62,9 @@
   position: relative;
   background: pink;
 }
-#animate {
-  width: 30px;
-  height: 30px;
+#nictric {
+  width: 125px;
+  height: 250px;
   position: absolute;
   background: black;
 }
@@ -94,7 +94,24 @@
 
 
     <div id ="container">
-        <div id ="animate"></div>
+        <div id ="nictric"></div>
       </div>  
+
+      <script>
+      function myMove() {
+        var elem = document.getElementById("nictric");
+        var pos = 0;
+        var id = setInterval(frame, 4);
+        function frame() {
+          if (pos == 300) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+          }
+        }
+      }
+    </script>
 </body>
 </html>
